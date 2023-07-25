@@ -1,0 +1,41 @@
+[NEAT]
+fitness_criterion = max
+fitness_threshold = 4.0
+pop_size = 150
+reset_on_extinction = False
+
+
+[DefaultGenome]
+# Configures the structure of the neural network genome
+node_gene_type = DefaultNodeGene
+# Input nodes: genre_preference and min_rating
+input_nodes = 2
+# Output nodes: movie recommendation scores
+output_nodes = 7
+# The probability of a connection gene mutation
+conn_add_prob = 0.5
+# The probability of a node gene mutation
+node_add_prob = 0.2
+# The probability of enabling a disabled connection gene
+enabled_default = True
+# The compatibility threshold for two genomes
+compatibility_threshold = 3.0
+# The initial weight for a new connection gene
+initial_connection = 1.0
+num_inputs = 2
+num_outputs = 7
+num_hidden = 2
+
+
+[DefaultNodeGene]
+# Configures the types of nodes in the neural network
+activation_default = sigmoid
+aggregation_default = sum
+
+[DefaultConfig]
+# NEAT algorithm parameters
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient = 0.5
+species_fitness_func = max
+survival_threshold = 0.2
+allow_recurrent_connections = False
