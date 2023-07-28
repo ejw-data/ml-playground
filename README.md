@@ -94,10 +94,10 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
 * scikit-surprise
 * gym
 
-
+<br>
 
 ## Data Source  
-Datasets were generated through scikit-learn data generators.
+Datasets were generated through scikit-learn data generators or simple algorithms
 
 <br>
 
