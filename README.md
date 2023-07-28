@@ -14,12 +14,33 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
 
 ## Content  
 * Classification
+    * Gaussian Naive Bayes (continuous data)
+    * Naive Bayes (text)
+    * Gradient Boosting
+    * Linear Discriminant Learning
+    * Quadratic Discriminant Learning
     * Logistic
     * KNN
+    * Decision Trees
     * Random Forest
+    * Isolation Forest - identifies early terminating branches as outliers
     * Support Vector Classifier
 * Clustering
-    * KMeans
+    * Centroid/Distance
+        * KMeans
+    * Density
+        * DBSCAN
+    * Hierarchical
+        * Agglomerative Hierarchy
+        * Divisive Hierarchical
+    * Gaussian Mixture Models (GMM)
+    * Mean Shift
+    * Affinity Propogation
+    * Fuzzy C-Means (*in-progress)
+    * Balanced Iterative Reducing and Clustering using Hierarchies (BIRCH)
+    * Self-Organizing Maps (SOM)
+    * Ordering Points to Identify the Clustering Structure (OPTICS)
+    * Spectal 
 * Computer Vision (future)
 * Natural Language Processing 
     * Keyword Extraction
@@ -61,10 +82,18 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Ensemble - uses multiple techniques
         * Hybrid (*in-progress) - uses content-based and collaborative filtering
 * Regression
+    * Feature Transformation (*in-progress) 
+    * Time Lag of Feature - incorporates a time dependent feature into the model
+    * Change Over Time - incorporates the difference between consecutive datapoints
+    * Lowess and Loess Smoothing - non-parametric smoothing
     * Ordinary Least Squares - typically non-regularized method that minimizes the sum of the squared errors
-    * Lasso - regularization method that shrinks the coefficients to even zero
-    * Ridge - regularization method that minimizes the model complexity (especially multicollinearity) but doesn't shrink the coeffients to zero
-    * Time Dependent - incorporates a time dependent feature into the model
+    * Lasso - regularization method that shrinks the coefficients to even zero (l1 regularization)
+    * Ridge - regularization method that minimizes the model complexity (especially multicollinearity) but doesn't shrink the coeffients to zero (l2 regularization)
+    * ElasticNet - regularization method that uses l1 and l2 regularization
+    * Polynomial - transform features then applies the ordinary least squares regression
+    * Support Vector Regression
+    * Quantile Regression 
+    
 * Reinforcement Learning (future)
 * Time Series
     * Survival Analysis - expected duration of time until an event occurs
