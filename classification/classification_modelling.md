@@ -4,8 +4,6 @@
 
 `Logistic Regression`:  Large numbers of features especially categorical values can cause overfitting or irregular results.  To reduce this issue, features can be selected through L1 penalty or by using stepwise methods like forward selection or backward selection.  Scikit-learn has a exhaustive search method call `recursive feature engineering` that is a form of backward selection.  If manually creating a method then consider making the selection of a feature based on a cutoff of the `BIC` or `AIC` criteria.  
 
-
-
 #### Feature Preparation  
 
 `Scaling` (from Scikit-learn):  StandardScaler centers the data's mean around zero and normalizes it to have a variance of one.  QuantileTransformer(ouptut_distribution='normal') works similarly but will typically have a more normal shaped distribution.  MinMaxScaler scales the data between two points and has a minimal influence on the features.  RobustScaler reduces the importance of outliers and data that spans a larger range.  Normalizer does not normalize features but normalizes rows of data.  Scaling data is important for neural networks, regularized regression, k-nearest neighbors, support vector machines (due to gradient descent), and discriminant analysis type algorithms.  For visual demonstration of scaling, refer to this [article](https://www.kaggle.com/code/discdiver/guide-to-scaling-and-standardizing/notebook)  
