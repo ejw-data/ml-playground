@@ -24,7 +24,9 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Decision Trees
     * Random Forest
     * Isolation Forest - identifies early terminating branches as outliers
-    * Support Vector Classifier
+    * Support Vector Classifier  
+<br>
+
 * Clustering
     * Centroid/Distance
         * KMeans
@@ -40,8 +42,14 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Balanced Iterative Reducing and Clustering using Hierarchies (BIRCH)
     * Self-Organizing Maps (SOM)
     * Ordering Points to Identify the Clustering Structure (OPTICS)
-    * Spectal 
+    * Spectral  
+
+<br>
+
 * Computer Vision (future)
+
+<br>
+
 * Natural Language Processing 
     * Keyword Extraction
     * Lemmazation
@@ -53,6 +61,8 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Summarization
     * Text Classification
     * Topic Modelling  
+<br>
+
 * Neural Networks
     * Classification Binary
     * Classification KMeans
@@ -64,7 +74,10 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Multiregression (linear)
     * NeuroEvolution Augmenting Topologies (*in-progress)
     * Regression (linear)
-    * Regression (non-linear)
+    * Regression (non-linear)  
+
+<br>
+
 * Recommendation Engines - [Link](https://medium.com/mlearning-ai/recommendation-systems-arl-association-rule-learning-bed1a07b5d9a#:~:text=Simple%20Recommender%20Systems%3A%20Makes%20general,based%20on%20similarities%20of%20products.)
     * Simple Recommendation Systems - uses business knowledge/heuristics or simple sequencing
         * Utility-based - rules based on simple filters
@@ -80,7 +93,10 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
         * Demographic-based - uses trends in demographics to create a rule
         * Collaborative Filtering (*in-progress)
     * Ensemble - uses multiple techniques
-        * Hybrid (*in-progress) - uses content-based and collaborative filtering
+        * Hybrid (*in-progress) - uses content-based and collaborative filtering  
+
+<br>
+
 * Regression
     * Feature Transformation (*in-progress) 
     * Time Lag of Feature - incorporates a time dependent feature into the model
@@ -93,11 +109,18 @@ Testing the limitations, inabilities, and strengths of models with synthetic dat
     * Polynomial - transform features then applies the ordinary least squares regression
     * Support Vector Regression
     * Quantile Regression 
-    
-* Reinforcement Learning (future)
+
+<br>
+
+* Reinforcement Learning (future)  
+
+<br>
+
 * Time Series
     * Survival Analysis - expected duration of time until an event occurs
     * Time Series Decomposition - separating cyclic events from trends
+
+<br>
 
 ## Technologies    
 *  Python
