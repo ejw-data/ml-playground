@@ -8,8 +8,13 @@
 
 #### Feature Preparation  
 
-`Scaling` (from Scikit-learn):  StandardScaler centers the data's mean around zero and normalizes it to have a variance of one.  QuantileTransformer(ouptut_distribution='normal') works similarly but will typically have a more normal shaped distribution.  MinMaxScaler scales the data between two points and has a minimal influence on the features.  RobustScaler reduces the importance of outliers and data that spans a larger range.  Normalizer does not normalize features but normalizes rows of data.  Scaling data is important for neural networks, regularized regression, k-nearest neighbors, support vector machines (due to gradient descent), and discriminant analysis type algorithms.  For visual demonstration of scaling, refer to this [article](https://www.kaggle.com/code/discdiver/guide-to-scaling-and-standardizing/notebook)
+`Scaling` (from Scikit-learn):  StandardScaler centers the data's mean around zero and normalizes it to have a variance of one.  QuantileTransformer(ouptut_distribution='normal') works similarly but will typically have a more normal shaped distribution.  MinMaxScaler scales the data between two points and has a minimal influence on the features.  RobustScaler reduces the importance of outliers and data that spans a larger range.  Normalizer does not normalize features but normalizes rows of data.  Scaling data is important for neural networks, regularized regression, k-nearest neighbors, support vector machines (due to gradient descent), and discriminant analysis type algorithms.  For visual demonstration of scaling, refer to this [article](https://www.kaggle.com/code/discdiver/guide-to-scaling-and-standardizing/notebook)  
 
+`Feature Reduction`:  Using PCA is a commmon way of reducing the number of features by combining the explained variance into fewer number of principle components while not losing most of the data.  
+
+`Feature Selection`:  Using an L1 penalty will potentially reduce the features that offer no explanatory value to coefficient of zero.  
+
+`Visualizing`:  Seaborn's pairplot is a handy tool for determining the relationship between variables that might lead to clusters or classifications.  
 #### Explaining the Classification Report
 
 **A Quick Look at Precision, Recall, F1-score, Support, and Classes**
