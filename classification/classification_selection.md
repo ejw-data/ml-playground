@@ -16,11 +16,13 @@ K-Nearest Neighbors is an algorithm that selects the nearest data points to the 
 * Decision Trees  
 ```
 A Decision Tree makes binary decisions to split each node into child nodes until there is a terminal node (also known as a leaf).  Each split maximizes the purity and calculated based on a metric.  Depending on the type of problem  we choose a different metric - for continuous target variables (regression) we use the 'Reduction in Variance' metric; for categorical target variables we use the gini impurity (probability squared), the information gain (aka entropy, log probability), or the chi-squared metric.  Gini is preferred because it is very similar to information gain but the algorithim performs better since it does not have a logorithm.  Entropy measures the amount of disorder so it is at its greatest when two class are equally probable.  On the other hand Gini is at its greatest when the probability of a class is at it's highest meaning it is at it's peak pureness.  The chi-squared metric is used if a node needs split by more than two categories.  Decision trees can be very precise but this also means that overfitting is very easy to do.  Here is a nice reference - [Link](https://quantdare.com/decision-trees-gini-vs-entropy/).  Improving the model can be done by changing thesholds related to the maximum number of branches (depth) the tree can have, the minimum number of samples in a node to allow a split, and the minimum number of samples in a terminating node.  Some less common constraints include the minimum weighted fraction of input weights to be a leaf and the maximum number of features considered when making a split.  The benefit of this model is that the outcomes can be viewed graphically and are easy to interpret.  
+
 ```
 * Random Forest  
 ```
 A random forest is an ensemble method that uses the most common output of many decision trees as its prediction for classification or it uses the average prediction of all the decision trees for regression.  This is also an example of a bagging process since the summarization of multiple models is occuring.  The benefit of this model include a lower probability of overfitting but lacks the graphical explanatory ability.  
 ```
+
 * Isolation Forest
 ```
 Isolation forests are a form of decision trees where early terminating branches are considered outliers (assumes anomalies are few and different).  This is an ensemble model and is also unsupervised model.  The features and data are randomly sampled and the samples that have the most depth are considered normal and the short depth are considered outliers.  
@@ -34,7 +36,8 @@ SVC are very good at solving binary classification problems, solving linear and 
 * Naive Bayes (text)  
 ```
 Naive Bayes is used to stochastically group objects based on independent and equally significant features.  Objects are classified by Bayes Theorem where event A occurs at a particular probability given that B has occurred.  It is often used for text classification but the independence of features is often a faulty assumption.  It is liked due to its simplicity, need for little data, and effectiveness.  It is less reliable for regression due to the independence assumpiton.  There are several forms of NB.  Reference: [Link](https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c)  
-```
+```  
+
 * Gaussian Naive Bayes (continuous data)
 ```
 GNB is similar to regular NB but supports continuous features by conforming the variables to a Gausian Distribution.  Reference: [Link](https://www.analyticsvidhya.com/blog/2021/11/implementation-of-gaussian-naive-bayes-in-python-sklearn/)

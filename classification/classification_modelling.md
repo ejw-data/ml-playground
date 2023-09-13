@@ -1,4 +1,4 @@
-# Classification  
+# Classification Modelling
 
 #### Feature Selection  
 
@@ -10,7 +10,11 @@
 
 `Feature Reduction`:  Using PCA is a commmon way of reducing the number of features by combining the explained variance into fewer number of principle components while not losing most of the data.  
 
-`Feature Selection`:  Using an L1 penalty will potentially reduce the features that offer no explanatory value to coefficient of zero.  
+`Feature Selection`:  Using an L1 penalty will potentially reduce the features that offer no explanatory value to coefficient of zero.  A correlation matrix showing the relation of the independent and dependent features can be used to find the pertinent features that have less than 0.2 correlation.  Using algorithmic selection can also help like using SelectKBest() and ExtraTreesClassifier() 
+
+`Feature Improvement`: Filling missing values (**many methods), drowing NA rows, drop entire features (NA > 50%), replace NA with 0, sample balancing, removing outliers, binning  
+
+`Feature Prep`:  Encoding, scaling, normalizing
 
 `Visualizing`:  Seaborn's pairplot is a handy tool for determining the relationship between variables that might lead to clusters or classifications.  
 #### Explaining the Classification Report
@@ -45,3 +49,10 @@ There is a tradeoff between how many FP and FN that are predicted.  When one is 
     * Algorithmic approaches to handling imbalances (class weights, balancing, regularization)
 
 
+#### Optimization  
+
+`GridSearch`:  Searching for the right parameters is very important especially when 
+
+
+#### Reference:  
+https://www.analyticsvidhya.com/blog/2021/03/step-by-step-process-of-feature-engineering-for-machine-learning-algorithms-in-data-science/  
